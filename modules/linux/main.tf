@@ -1,5 +1,6 @@
+# Provision disks
 data "template_file" "linux_provision_vm1" {
-  template = file("./modules/linux/scripts/linux_provision_vm.sh")
+  template = file("./scripts/linux_provision_vm.sh")
   vars = {
     password = var.vm_password
   }
