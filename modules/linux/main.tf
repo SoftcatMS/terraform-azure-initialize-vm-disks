@@ -18,7 +18,7 @@ resource "local_sensitive_file" "linux_provision_vm1" {
 }
 
 resource "azurerm_virtual_machine_extension" "provision_linux_vm1" {
-  name                 = "provision-linux-ext"
+  name                 = "provision-linux-script-ext"
   virtual_machine_id   = var.virtual_machine_id
   publisher            = "Microsoft.Azure.Extensions"
   type                 = "CustomScript"
