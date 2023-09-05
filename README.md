@@ -1,12 +1,8 @@
-# Module name using following format (<provider>-terraform-<description>, example: azure-terraform-vnet) 
+# terraform-azure-vm-initialize-disks
 
-<Module description>
+Initializes and mounts data disks attached to an Azure VM
+Adds user `softcatadmin` with existing default password.
 
-It supports creating:
-
-- list resources created by module
-
-<Describe any submodules> 
 
 ## Usage Examples
 You can go to the tests folder, or review the examples folder: [examples](./examples)
@@ -37,20 +33,7 @@ Azure
 - [Terraform Provider for Azure](https://github.com/hashicorp/terraform-provider-azurerm)
 - CLI Tool [az](https://docs.microsoft.com/en-us/cli/azure/)
 
-AWS  
-- [Terraform Provider for AWS](https://github.com/hashicorp/terraform-provider-aws)
-- CLI Tool [aws-cli](https://aws.amazon.com/cli/)
 
-GCP  
-- [Terraform Provider for GCP](https://github.com/hashicorp/terraform-provider-google)
-- [Terraform Provider for GCP Beta](https://github.com/terraform-providers/terraform-provider-google-beta)
-- CLI Tool [gcloud](https://cloud.google.com/sdk/gcloud/)
-
-
-<Any configuration needed on cloud plartform such as:>
-- Service Principals
-- IAM Roles
-- Service Accounts
 
 
 ## Contributing
