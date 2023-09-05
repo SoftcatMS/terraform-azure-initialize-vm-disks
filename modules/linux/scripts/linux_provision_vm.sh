@@ -1,5 +1,12 @@
 #!/bin/sh
 
+if [ -d "/tmp/test" ]; then
+    echo "Exists";
+else
+    mkdir tmp/test;
+fi 
+
+
 # Provision data disks
 cd /dev/disk/azure/scsi1/ || exit
 
